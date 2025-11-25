@@ -1,9 +1,15 @@
-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin:0; background:#f4f6f8; color:#111; padding:16px; }
-.wrap { max-width:720px; margin:auto; }
-h1 { font-size:20px; font-weight:800; margin-bottom:12px; }
-.card { background:#fff; padding:12px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); margin-bottom:12px; }
-.row { display:flex; gap:8px; align-items:center; margin-top:6px; }
-input, select, textarea { padding:8px; border-radius:8px; border:1px solid #e5e7eb; flex:1; }
-button { padding:10px; border:none; border-radius:10px; background:#111827; color:#fff; cursor:pointer; }
-.pill { display:inline-block; padding:6px 10px; border-radius:999px; background:#eef2ff; margin:4px 4px 0 0; font-size:13px; }
-#txlist, #exercise, #answer, #weekplan { margin-top:6px; font-size:14px; }
+body {margin:0;font-family:system-ui,sans-serif;color:#111;background:#fff;overflow-x:hidden;}
+.bg-overlay {position:fixed;top:0;left:0;width:100%;height:100%;background:url('https://images.unsplash.com/photo-1599058917216-828d8d1a2c3c?crop=entropy&cs=tinysrgb&fit=max&w=1080') center/cover no-repeat;opacity:0.1;z-index:-1;}
+.wrap {max-width:720px;margin:auto;padding:16px;}
+header h1{color:#e53935;margin-bottom:12px;text-align:center;}
+.menu{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin-bottom:12px;}
+.menu button{flex:1;padding:10px;border:none;border-radius:10px;background:#e53935;color:#fff;cursor:pointer;font-weight:600;}
+.page{display:none;animation:fade 0.3s;}
+.page.active{display:block;}
+.card{background:#fff;padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-bottom:12px;}
+.row{display:flex;gap:8px;align-items:center;margin-top:6px;}
+input, select, textarea{padding:8px;border-radius:8px;border:1px solid #e5e7eb;flex:1;}
+button{padding:10px;border:none;border-radius:10px;background:#111;color:#fff;cursor:pointer;}
+ul{padding-left:20px;}
+.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#e53935;color:#fff;margin:4px 4px 0 0;font-size:13px;}
+@keyframes fade{0%{opacity:0}100%{opacity:1}}
