@@ -1,9 +1,9 @@
 {
-  "name": "Harun Assistant",
+  "name": "My Personal Assistant",
   "short_name": "Assistant",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#f4f6f8",
+  "theme_color": "#111827",
   "icons": []
 }
