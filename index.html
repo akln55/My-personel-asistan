@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Assistant</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>My Personal Assistant — Harun</h1>
+
+    <div class="card">
+      <div>
+        <strong>Bakiye:</strong> <span id="balance">0 TL</span>
+      </div>
+      <div class="row">
+        <input id="amount" placeholder="Miktar (TL)" type="number">
+        <select id="type">
+          <option value="expense">Harcama</option>
+          <option value="income">Kazanç</option>
+        </select>
+        <button id="addTx">Ekle</button>
+      </div>
+      <div id="txlist"><small>Henüz işlem yok</small></div>
+    </div>
+
+    <div class="card">
+      <div>
+        <strong>Kişisel Veri</strong> <small>Boy / Kilo</small>
+      </div>
+      <div class="row">
+        <input id="height" placeholder="Boy (cm)" type="number" value="175">
+        <input id="weight" placeholder="Kilo (kg)" type="number" value="86">
+        <button id="calcBmi">Hesapla</button>
+      </div>
+      <div id="exercise"></div>
+      <div><strong>BMI:</strong> <span id="bmi">—</span></div>
+    </div>
+
+    <div class="card">
+      <div><strong>Haftalık Plan — Özet</strong></div>
+      <div id="weekplan">
+        Pazartesi–Cuma: Okul 08:15 çık • Spor 20 dk • Ödev 60 dk • Yemekhane kullan<br>
+        Cumartesi: İş (08:10/08:40 çıkış) • Kazanç: 1500 TL (günlük)<br>
+        Pazar: Dinlenme
+      </div>
+      <div class="row">
+        <input id="wakeTime" placeholder="Uyanma saati (07:00)" value="07:00">
+        <button id="setAlarm">Alarm Kur</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div><strong>Asistan (yerel)</strong></div>
+      <textarea id="query" rows="2" placeholder="Sorunu yaz..."></textarea>
+      <div class="row">
+        <button id="ask">Sor</button>
+        <button id="clear">Temizle</button>
+      </div>
+      <div id="answer"></div>
+    </div>
+
+    <div class="card">
+      <div><strong>Boş Zaman / Öğren</strong></div>
+      <div class="pill">İngilizce 10 kelime</div>
+      <div class="pill">Orta Çağ kısa not</div>
+      <div class="pill">JS: fonksiyon</div>
+      <div>Ayrıntı için asistan'a sor: "İngilizce kelime listesi ver"</div>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
